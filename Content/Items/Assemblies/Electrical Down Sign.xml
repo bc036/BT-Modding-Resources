@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Electrical Down Sign" description="" hideinmenus="false">
+  <Structure name="Fin Patch 1" identifier="finapatch01" ID="483" rect="-32,-43,128,127" MaxHealth="100" CrushDepth="0" SpriteColor="150,150,150,255" UseDropShadow="False" DropShadowOffset="0,0" Scale="0.34" TextureScale="1,1" TextureOffset="0,0" NoAITarget="False" DisallowedUpgrades="" SpriteDepth="0.97" HiddenInGame="False" />
+  <Structure name="Label Icon Electricity" identifier="labelsiconelectricity" ID="1114" rect="-24,-49,64,64" MaxHealth="100" CrushDepth="0" SpriteColor="255,255,255,128" UseDropShadow="False" DropShadowOffset="0,0" Scale="0.1" TextureScale="1,1" TextureOffset="0,0" NoAITarget="False" DisallowedUpgrades="" SpriteDepth="0.85" HiddenInGame="False" />
+  <Structure name="Label Arrow Vertical B" identifier="labelsarroverticalb" ID="1117" rect="-17,-71,45,45" flippedy="true" MaxHealth="100" CrushDepth="0" SpriteColor="255,255,255,128" UseDropShadow="False" DropShadowOffset="0,0" Scale="0.1" TextureScale="1,1" TextureOffset="0,0" NoAITarget="False" DisallowedUpgrades="" SpriteDepth="0.87" HiddenInGame="False" />
+</ItemAssembly>

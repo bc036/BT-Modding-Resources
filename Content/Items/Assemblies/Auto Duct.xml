@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Auto Duct" description="" hideinmenus="false">
+	<Item name="" identifier="ductblock" ID="6" rect="0,0,32,32" linked="9" NonInteractable="False" NonPlayerTeamInteractable="False" AllowSwapping="True" Rotation="0" Scale="0.5" SpriteColor="255,255,255,255" InventoryIconColor="255,255,255,255" ContainerColor="255,255,255,255" Condition="100" InvulnerableToDamage="False" Tags="ductblock" DisplaySideBySideWhenLinked="False" DisallowedUpgrades="" SpriteDepth="0.01" HiddenInGame="False">
+		<Door OpeningSpeed="3" ClosingSpeed="3" ToggleCoolDown="1" IsOpen="False" UseBetweenOutpostModules="True" BotsShouldKeepOpen="False" PickingTime="3" CanBePicked="True" AllowInGameEditing="True" Msg="ItemMsgForceOpenCrowbar">
+			<requireditem items="crowbar" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+		</Door>
+		<Repairable DeteriorationSpeed="0" MinDeteriorationDelay="0" MaxDeteriorationDelay="0" MinDeteriorationCondition="50" RepairThreshold="80" FixDurationLowSkill="25" FixDurationHighSkill="10" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRepairWrench">
+			<requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+		</Repairable>
+		<ConnectionPanel Locked="False" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRewireScrewdriver">
+			<requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+			<input name="toggle" />
+			<input name="set_state">
+				<link w="10" />
+			</input>
+			<output name="state_out" />
+		</ConnectionPanel>
+	</Item>
+	<Item name="" identifier="bluewire" ID="10" rect="49979,-14986,42,16" NonInteractable="False" NonPlayerTeamInteractable="False" AllowSwapping="True" Rotation="0" Scale="0.5" SpriteColor="51,121,173,255" InventoryIconColor="51,121,173,255" ContainerColor="255,255,255,255" Condition="100" InvulnerableToDamage="False" Tags="wire,smallitem" DisplaySideBySideWhenLinked="False" DisallowedUpgrades="" SpriteDepth="0.8" HiddenInGame="True" hideinassemblypreview="true">
+		<Holdable HoldPos="0,0" HoldAngle="0" SwingAmount="0,0" SwingSpeed="0" SwingWhenHolding="False" SwingWhenAiming="False" SwingWhenUsing="False" SpriteDepthWhenDropped="0.55" PickingTime="0" CanBePicked="True" AllowInGameEditing="True" Msg="ItemMsgPickUpSelect" />
+		<Wire NoAutoLock="False" UseSpriteDepth="False" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="" nodes="16;7;16;0" />
+	</Item>
+	<Item name="" identifier="waterdetector" ID="7" rect="4,15,24,16" NonInteractable="False" NonPlayerTeamInteractable="False" AllowSwapping="True" Rotation="0" Scale="0.5" SpriteColor="255,255,255,255" InventoryIconColor="255,255,255,255" ContainerColor="255,255,255,255" Condition="100" InvulnerableToDamage="False" Tags="smallitem,sensor" DisplaySideBySideWhenLinked="False" DisallowedUpgrades="" SpriteDepth="0.8" HiddenInGame="False">
+		<WaterDetector MaxOutputLength="200" Output="1" FalseOutput="0" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="" />
+		<Holdable Attached="True" HoldPos="0,0" HoldAngle="0" SwingAmount="0,0" SwingSpeed="0" SwingWhenHolding="False" SwingWhenAiming="False" SwingWhenUsing="False" SpriteDepthWhenDropped="0.55" PickingTime="5" CanBePicked="True" AllowInGameEditing="True" Msg="ItemMsgDetachWrench">
+			<requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+		</Holdable>
+		<ConnectionPanel Locked="False" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRewireScrewdriver">
+			<requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+			<output name="signal_out">
+				<link w="10" />
+			</output>
+			<output name="water_%" />
+			<output name="high_pressure" />
+		</ConnectionPanel>
+	</Item>
+	<Structure name="Platform Basic" identifier="platform" ID="8" rect="0,-15,32,27" flippedy="true" MaxHealth="100" CrushDepth="0" SpriteColor="255,255,255,255" UseDropShadow="False" DropShadowOffset="0,0" Scale="1" TextureScale="1,1" TextureOffset="0,0" NoAITarget="False" DisallowedUpgrades="" SpriteDepth="0.9" HiddenInGame="False" />
+	<Gap ID="9" horizontal="false" hiddeningame="false" rect="0,0,32,32" />
+</ItemAssembly>

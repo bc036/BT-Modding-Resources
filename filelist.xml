@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="bc036 Modding Resources" modversion="1.0.64" corepackage="False" gameversion="0.17.15.0">
-  <Item file="%ModDir%\Content\Items\Containers/modified_items.xml" />
-  <ItemAssembly file="%ModDir%\Content\Items\Assemblies/Diving Suit Locker.xml" />
+	<Item file="%ModDir%/Content/Items/Containers/modified_items.xml" />
+	<Item file="%ModDir%/Content/Items/Containers/new_items.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Diving Suit Locker.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Airlock Up Sign.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Auto Duct.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Electrical Down Sign.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Labled Junction Box.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Medical Supply Cabinet.xml" />
+	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Steering Left Sign.xml" />
 </contentpackage>

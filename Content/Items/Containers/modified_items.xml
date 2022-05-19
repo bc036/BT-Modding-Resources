@@ -10,12 +10,12 @@
 			</ItemContainer>
 		</Item>
 		<Item name="Diving Suit Locker (H5)" identifier="divingsuitlocker2" tags="container,divingsuitcontainer,divingsuitcontainerhorizontal" linkable="true" allowedlinks="oxygentankshelf" pickdistance="50" scale="0.6" >
-			<Sprite name="Large Diving Suit Locker Horizontal" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.84" sourcerect="82,0,248,338" origin="0.5,0.5" />
-			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,130" />
-			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,65" />
-			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" />
-			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-65" />
-			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-130" />
+			<Sprite name="Large Diving Suit Locker Horizontal" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.84" sourcerect="82,0,248,338" origin="0.5,0.5" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,130" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,65" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-65" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-130" />
 			<Powered powerconsumption="50" currpowerconsumption="10" isactive="true">
 				<GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
 			</Powered>
@@ -39,7 +39,7 @@
 			</ItemContainer>
 		</Item>
 		<Item name="Oxygen Tank Rack (10)" identifier="oxygentankshelf" tags="container,oxygentankcontainer,oxygentankrefiller" linkable="true" allowedlinks="divingsuitlocker2" pickdistance="50" scale="0.6">
-			<Sprite name="Oxygen Tank Shelf" texture="Content\Items\Containers/DivingSuitLocker.png" depth="0.84" sourcerect="0,0,92,338" origin="0.5,0.5" />
+			<Sprite name="Oxygen Tank Shelf" texture="Content/Items/Containers/DivingSuitLocker.png" depth="0.84" sourcerect="0,0,92,338" origin="0.5,0.5" />
 			<Powered powerconsumption="50" currpowerconsumption="50" isactive="true">
 				<GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
 			</Powered>

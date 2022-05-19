@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Labled Junction Box" description="" hideinmenus="false">
+  <Item name="" identifier="junctionbox" ID="1226" rect="-76,-563,54,90" NonInteractable="False" NonPlayerTeamInteractable="False" AllowSwapping="True" Rotation="0" Scale="0.5" SpriteColor="255,255,255,255" InventoryIconColor="255,255,255,255" ContainerColor="255,255,255,255" Condition="100" InvulnerableToDamage="False" Tags="junctionbox" DisplaySideBySideWhenLinked="False" DisallowedUpgrades="" SpriteDepth="0.8" HiddenInGame="False">
+    <PowerTransfer CanBeOverloaded="True" OverloadVoltage="1.7" FireProbability="0.15" IsActive="True" MinVoltage="0" PowerConsumption="0" VulnerableToEMP="True" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgInteractSelect" />
+    <LightComponent Range="10" CastShadows="False" DrawBehindSubs="False" IsOn="True" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0" LightColor="255,255,255,0" IsActive="True" MinVoltage="0.5" PowerConsumption="1" VulnerableToEMP="True" PickingTime="0" CanBePicked="False" AllowInGameEditing="False" Msg="" />
+    <LightComponent Range="10" CastShadows="False" DrawBehindSubs="False" IsOn="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="1.5" LightColor="255,255,255,0" MinVoltage="0.5" PowerConsumption="1" VulnerableToEMP="True" PickingTime="0" CanBePicked="False" AllowInGameEditing="False" Msg="" />
+    <ConnectionPanel Locked="False" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+      <output name="power" />
+      <output name="signal_0" />
+      <output name="signal_1" />
+      <output name="signal_2" />
+      <output name="signal_3" />
+      <output name="condition_out" />
+      <output name="power_value_out" />
+      <output name="load_value_out" />
+    </ConnectionPanel>
+    <Repairable DeteriorationSpeed="0.1" MinDeteriorationDelay="120" MaxDeteriorationDelay="720" MinDeteriorationCondition="0" RepairThreshold="80" FixDurationLowSkill="25" FixDurationHighSkill="5" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRepairScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+    </Repairable>
+  </Item>
+  <Item name="" identifier="textdisplay" ID="1227" rect="-80,-626,63,24" NonInteractable="False" NonPlayerTeamInteractable="False" AllowSwapping="True" Rotation="0" Scale="0.5" SpriteColor="255,255,255,255" InventoryIconColor="255,255,255,255" ContainerColor="255,255,255,255" Condition="100" InvulnerableToDamage="False" Tags="light" DisplaySideBySideWhenLinked="False" DisallowedUpgrades="" SpriteDepth="0.79" HiddenInGame="False">
+    <LightComponent Range="10" CastShadows="False" DrawBehindSubs="False" IsOn="True" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0" LightColor="255,255,255,25" IsActive="True" MinVoltage="0" PowerConsumption="0" VulnerableToEMP="True" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="" />
+    <ItemLabel Padding="10,5,10,12" Text="" IgnoreLocalization="False" TextColor="255,255,255,255" TextScale="1" Scrollable="True" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="" />
+    <Holdable Attached="True" HoldPos="0,0" HoldAngle="0" SwingAmount="0,0" SwingSpeed="0" SwingWhenHolding="False" SwingWhenAiming="False" SwingWhenUsing="False" SpriteDepthWhenDropped="0.55" PickingTime="5" CanBePicked="True" AllowInGameEditing="True" Msg="ItemMsgDetachWrench">
+      <requireditem items="wrench" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+    </Holdable>
+    <ConnectionPanel Locked="False" PickingTime="0" CanBePicked="False" AllowInGameEditing="True" Msg="ItemMsgRewireScrewdriver">
+      <requireditem items="screwdriver" type="Equipped" optional="false" ignoreineditor="false" excludebroken="true" targetslot="-1" allowvariants="true" />
+      <input name="set_text" />
+      <input name="set_color" />
+      <input name="set_text_color" />
+    </ConnectionPanel>
+  </Item>
+</ItemAssembly>
