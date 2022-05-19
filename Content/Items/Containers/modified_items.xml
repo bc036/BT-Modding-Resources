@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<Override>
+		<Item name="" identifier="unitloaddevice" tags="cargocontainer" linkable="true" pickdistance="150" waterproof="true" scale="0.5">
+			<Sprite texture="Content/Items/Containers/UnitLoadDevice.png" depth="0.8" sourcerect="0,0,567,446" origin="0.5,0.5" />
+			<DecorativeSprite texture="Content/Items/Containers/UnitLoadDevice.png" depth="0.85" sourcerect="0,457,567,446" origin="0.5,0.5" />
+			<ItemContainer capacity="12" slotsperrow="6" maxstacksize="1" canbeselected="true" hideitems="false" itempos="120,-364" iteminterval="150,80" itemsperrow="3" msg="ItemMsgInteractSelect" containedspritedepths="0.81,0.82,0.81,0.82,0.81,0.82,0.81,0.82,0.81,0.82,0.81,0.82">
+				<GuiFrame relativesize="0.25,0.3" anchor="Center" style="ItemUI" />
+				<Containable items="crate" />
+			</ItemContainer>
+		</Item>
+		<Item name="" identifier="divingsuitlocker2" category="Legacy" tags="container,divingsuitcontainer,divingsuitcontainerhorizontal" pickdistance="50" scale="0.6" >
+			<Sprite name="Large Diving Suit Locker Horizontal" texture="DivingSuitLocker.png" depth="0.84" sourcerect="82,0,248,338" origin="0.5,0.5" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,130" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,65" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-65" />
+			<DecorativeSprite name="Diving Suit Locker Frame" texture="DivingSuitLocker.png" depth="0.82" sourcerect="0,340,232,69" origin="0.5,0.5" offset="0,-130" />
+			<Powered powerconsumption="50" currpowerconsumption="10" isactive="true">
+				<GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
+			</Powered>
+			<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+				<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+				<RequiredSkill identifier="electrical" level="20" />
+				<StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+					<Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+					<Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+					<Affliction identifier="stun" strength="3" />
+					<Affliction identifier="burn" strength="5" />
+				</StatusEffect>
+				<RequiredItem items="screwdriver" type="Equipped" />
+				<ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+				<ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
+				<input name="power_in" displayname="connection.powerin" />
+			</ConnectionPanel>
+			<ItemContainer hideitems="false" drawinventory="true" capacity="5" slotsperrow="5" itempos="132,-44" iteminterval="0,-65" itemrotation="0" containedspritedepth="0.83" canbeselected="true" msg="ItemMsgInteractSelect">
+				<GuiFrame relativesize="0.25,0.2" anchor="Center" style="ItemUI" />
+				<Containable items="divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit" />
+			</ItemContainer>
+		</Item>
+		<Item name="" identifier="divingsuitlocker" category="Diving" tags="container,divingsuitcontainer,divingsuitcontainerwindow" linkable="true" allowedlinks="oxygentankshelf2" pickdistance="50" scale="0.5">
+			<Sprite name="Diving Suit Locker Vertical" texture="Content/Items/Containers/containers.png" depth="0.84" sourcerect="714,1,99,256" origin="0.5,0.5" />
+			<Powered powerconsumption="10" currpowerconsumption="10" isactive="true">
+				<GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
+			</Powered>
+			<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+				<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+				<RequiredSkill identifier="electrical" level="20" />
+				<StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+					<Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+					<Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+					<Affliction identifier="stun" strength="3" />
+					<Affliction identifier="burn" strength="5" />
+				</StatusEffect>
+				<RequiredItem items="screwdriver" type="Equipped" />
+				<ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+				<ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
+				<input name="power_in" displayname="connection.powerin" />
+			</ConnectionPanel>
+			<ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="0,0" iteminterval="0,0" canbeselected="true" msg="ItemMsgInteractSelect">
+				<GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+				<Containable items="divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit" />
+			</ItemContainer>
+		</Item>
+		<Item name="" identifier="oxygentankshelf2" nameidentifier="oxygentankshelf" category="Diving" tags="container,oxygentankcontainer,oxygentankrefiller" linkable="true" allowedlinks="divingsuitlocker" pickdistance="50" scale="0.5">
+			<Sprite name="Diving Suit Locker Small" texture="Content/Items/Containers/containers.png" sourcerect="714,259,99,82" depth="0.84" origin="0.5,0.5" />
+			<Powered powerconsumption="30" currpowerconsumption="30" isactive="true">
+				<GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
+			</Powered>
+			<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+				<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+				<RequiredSkill identifier="electrical" level="20" />
+				<StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+					<Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+					<Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+					<Affliction identifier="stun" strength="3" />
+					<Affliction identifier="burn" strength="5" />
+				</StatusEffect>
+				<RequiredItem items="screwdriver" type="Equipped" />
+				<ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+				<ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
+				<input name="power_in" displayname="connection.powerin" />
+			</ConnectionPanel>
+			<ItemContainer hideitems="false" drawinventory="true" capacity="3" maxstacksize="1" slotsperrow="3" itempos="27,-42" iteminterval="22.5,0" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
+				<GuiFrame relativesize="0.16,0.18" anchor="Center" style="ItemUI" />
+				<Containable items="oxygensource,weldingfuel" excludebroken="false">
+					<StatusEffect type="OnContaining" targettype="Contained" Condition="1.0" Comparison="And">
+						<Conditional Voltage="gt 0.1" targetcontainer="true" targetitemcomponent="Powered"/>
+						<Conditional HasTag="refillableoxygensource"/>
+					</StatusEffect>
+				</Containable>
+			</ItemContainer>
+		</Item>
+	</Override>
+</Items>

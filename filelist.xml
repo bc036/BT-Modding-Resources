@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="bc036 Modding Resources" modversion="1.0.64" corepackage="False" gameversion="0.17.15.0">
+  <Item file="%ModDir%\Content\Items\Containers/modified_items.xml" />
+  <ItemAssembly file="%ModDir%\Content\Items\Assemblies/Diving Suit Locker.xml" />
+</contentpackage>
