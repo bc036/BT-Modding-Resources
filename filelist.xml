@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="bc036 Modding Resources" modversion="1.0.64" corepackage="False" gameversion="0.17.15.0">
+<contentpackage name="bc036 Modding Resources" modversion="1.0.64" corepackage="False" steamworkshopid="2810479653" gameversion="0.17.15.0">
 	<Item file="%ModDir%/Content/Items/Containers/modified_items.xml" />
 	<Item file="%ModDir%/Content/Items/Containers/new_items.xml" />
 	<Item file="%ModDir%/Content/Items/Diving/modified_items.xml" />
+	<Item file="%ModDir%/Content/Items/Jobgear/Assistant/modified_items.xml" />
 	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Diving Suit Locker.xml" />
 	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Airlock Up Sign.xml" />
 	<ItemAssembly file="%ModDir%/Content/Items/Assemblies/Auto Duct.xml" />
